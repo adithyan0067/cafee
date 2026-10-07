@@ -1,0 +1,1 @@
+document.getElementById("adminLoginForm").addEventListener("submit",e=>{e.preventDefault();const u=document.getElementById("username").value,p=document.getElementById("password").value,m=document.getElementById("message");if(u==="admin"&&p==="admin123"){sessionStorage.setItem("canteenAdmin","yes");location.href="admin.html";}else{m.textContent="Invalid admin credentials.";}});
